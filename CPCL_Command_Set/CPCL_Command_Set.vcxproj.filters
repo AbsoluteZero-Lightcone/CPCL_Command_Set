@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="inc\CPCL_Command_Set_TypeDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="inc\CPCL_Command_Set.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CPCL_Command_Set.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">

@@ -1,7 +1,7 @@
-#include <iostream>
-using namespace std;
 #include ".\inc\CPCL_Command_Set.h"
+#include <iostream>
 
+using namespace std;
 #define main_cpp main
 
 void output_debug(CPCL_Command_t cmd) {
