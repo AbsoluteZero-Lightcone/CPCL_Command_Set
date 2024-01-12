@@ -1,0 +1,95 @@
+		/*
+		* 1
+<!> {offset} <200> <200> {height} {qty}
+
+2
+<PAGE-WIDTH> {width}
+
+3
+<PRINT>
+指令控制结束并打印控制内容
+4
+< FORM >
+设置打印结束后，并走纸到定位点
+5
+<;> {注释内容}
+控制内容的注释，不会被打印出来
+6
+<TEXT > {font} {size} {x} {y} {data}
+添加文字
+7
+< COUNT > {numeric value}
+对打印数字进行自动增减
+8
+<SETMAG > {w} {h}
+对字符字体进行放大
+9
+<BARCODE> {type} {width} {ratio} {height} {x} {y} {data}
+添加一维条码
+10
+<BARCODE> <PDF-417> {x} {y} [XD n] [YD n] [C n] [S n] {data}
+<ENDPDF>
+添加二维条码:PDF-417
+11
+<BARCODE> <QR> {x} {y} [M n] [U n] {data} <ENDQR>
+添加二维条码:QR
+12
+<DATAMATRIX> {type} {x} {y} [H n] {data}
+<ENDDATAMATRIX >
+添加 DATAMATRIX 条码指令
+13
+<BOX> {x0 } {y0 } {x1} {y1} {width}
+添加 矩形框
+14
+<LINE > {x0 } {y0 } {x1} {y1} {width}
+添加 线段
+15
+<INVERSE-LINE> {x0 } {y0 } {x1} {y1} {width}
+添加反白线段
+
+
+TEXT Concatenation
+同一行打印不同的字体
+25
+MULTILINE
+同一字体和高度打印多行文字
+26
+BARCODE-TEXT
+打印条码识别符
+27
+GRAPHICS
+制图命令
+28
+CONTRAST
+设置对比度
+29
+SPEED
+设置打印速度
+30
+UNDERLINE
+打印下划线
+31
+PREFEED
+打印之前走纸距离
+32
+POSTFEED
+打印之后走纸距离
+33
+SETBOLD
+设置打印粗体
+34
+PACE
+批量打印时，feed 按住打印，不按不打印
+35
+WAIT
+设置连续打印的间隔
+36
+SETSP
+设置字间距
+37
+BACKGROUND
+设置水印文字灰度级
+38
+BKTEXT
+打印水印文字
+		*/

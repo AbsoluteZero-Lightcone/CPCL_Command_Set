@@ -26,8 +26,13 @@
     <ClCompile Include="src\CPCL_Command_Set.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="example\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inc\ref">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

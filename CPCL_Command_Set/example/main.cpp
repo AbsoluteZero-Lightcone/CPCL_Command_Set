@@ -11,7 +11,6 @@ void output_debug(CPCL_Command_t cmd) {
 int main_cpp() {
 	CPCL_cmd CPCL;
 	CPCL.output_interface_callback = output_debug;
-	CPCL.Init();
 	string s = "13";
 	Text t1("s");
 	CPCL.add(t1);

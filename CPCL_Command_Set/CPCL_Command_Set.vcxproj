@@ -23,8 +23,11 @@
     <ClInclude Include="inc\CPCL_Command_Set_TypeDef.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="example\main.cpp" />
     <ClCompile Include="src\CPCL_Command_Set.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inc\ref" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
