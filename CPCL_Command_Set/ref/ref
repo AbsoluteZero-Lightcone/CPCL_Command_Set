@@ -1,18 +1,13 @@
 3
 <PRINT>
 指令控制结束并打印控制内容
-4
-< FORM >
 
-5
-<;> {注释内容}
-控制内容的注释，不会被打印出来
 6
 <TEXT > {font} {size} {x} {y} {data}
 添加文字
 7
 < COUNT > {numeric value}
-对打印数字进行自动增减
+
 8
 <SETMAG > {w} {h}
 对字符字体进行放大
@@ -47,11 +42,11 @@ TEXT Concatenation
 MULTILINE
 同一字体和高度打印多行文字
 26
-BARCODE-TEXT
-打印条码识别符
+
+
 27
-GRAPHICS
-制图命令
+
+
 28
 CONTRAST
 设置对比度
@@ -59,8 +54,8 @@ CONTRAST
 SPEED
 设置打印速度
 30
-UNDERLINE
-打印下划线
+
+
 31
 PREFEED
 打印之前走纸距离

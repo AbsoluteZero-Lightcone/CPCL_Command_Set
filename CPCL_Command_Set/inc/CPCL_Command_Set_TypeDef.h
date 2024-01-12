@@ -18,7 +18,8 @@ typedef string Content_t;
 
 typedef void (*Output_Interface_Callback_Handler)(CPCL_Command_t);
 
-
+typedef uint8_t Param_t;
+typedef uint8_t Switch_t;
 // Format:
 enum CharFont_t { FONT0 = 0, FONT1, FONT2, FONT3, FONT4, FONT5, FONT6, FONT7, FONT8 };
 enum CharRotation_t { ROTATION0 = 0, ROTATION90, ROTATION180, ROTATION270 };

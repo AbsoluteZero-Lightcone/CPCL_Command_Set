@@ -88,15 +88,3 @@ void CPCL_cmd::set(CPCL_Core_Object& object)const {
 }
 
 
-#define INSTANT_COMMAND_OUTPUT_DEFINITION(				\
-	func_name,											\
-	instruction)										\
-	void CPCL_cmd::func_name()const {					\
-		output_interface_callback(#instruction);		\
-		output_interface_callback("\n");				\
-	}
-
-INSTANT_COMMAND_OUTPUT_DEFINITION(Print, PRINT)
-INSTANT_COMMAND_OUTPUT_DEFINITION(Left_align, LEFT)
-INSTANT_COMMAND_OUTPUT_DEFINITION(Center_align, CENTER)
-INSTANT_COMMAND_OUTPUT_DEFINITION(Right_align, RIGHT)
