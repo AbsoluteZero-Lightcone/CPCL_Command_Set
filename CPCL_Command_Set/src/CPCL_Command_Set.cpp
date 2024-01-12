@@ -37,9 +37,9 @@ void Text::updateCmd() {
 	}
 	cmd.push_back(' ');
 	switch (align){
-	case LEFT:cmd.append("LEFT");break;
-	case CENTER:cmd.append("CENTER");break;
-	case RIGHT:cmd.append("RIGHT");break;
+	case LEFT_ALIGN:cmd.append("LEFT");break;
+	case CENTER_ALIGN:cmd.append("CENTER");break;
+	case RIGHT_ALIGN:cmd.append("RIGHT");break;
 	}
 	cmd.push_back(' ');
 	cmd.append(to_string(char_font));
@@ -82,7 +82,9 @@ void Page::updateCmd() {
 */
 void CPCL_cmd::add(CPCL_Basic_Object& object)const {
 	output_interface_callback(object.getFormCmd());
-	// todo：模板实现调用任意对象的输出指令
+}
+void CPCL_cmd::set(CPCL_Core_Object& object)const {
+	output_interface_callback(object.getFormCmd());
 }
 
 

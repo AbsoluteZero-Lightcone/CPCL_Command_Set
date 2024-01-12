@@ -22,7 +22,7 @@ typedef void (*Output_Interface_Callback_Handler)(CPCL_Command_t);
 // Format:
 enum CharFont_t { FONT0 = 0, FONT1, FONT2, FONT3, FONT4, FONT5, FONT6, FONT7, FONT8 };
 enum CharRotation_t { ROTATION0 = 0, ROTATION90, ROTATION180, ROTATION270 };
-enum Align_t {LEFT = 0,CENTER,RIGHT};
+enum Align_t {LEFT_ALIGN = 0,CENTER_ALIGN,RIGHT_ALIGN};
 enum CharBold_t {UNBOLD=0,BOLD};
 
 // DeviceCmd:

@@ -28,7 +28,7 @@ extern "C" {
 		CharRotation_t char_rotation = ROTATION0;
 		CharFont_t char_font = FONT0;
 		CharSize_t char_size = 1;
-		Align_t align = LEFT;
+		Align_t align = LEFT_ALIGN;
 		void updateCmd();
 	};
 
@@ -82,6 +82,7 @@ extern "C" {
 		//void Init(Printer& t_printer,Page& t_page);
 
 		void add(CPCL_Basic_Object& object)const;
+		void set(CPCL_Core_Object& object)const;
 
 		//下发打印命令
 		INSTANT_COMMAND_OUTPUT_DECLARATION(Print, PRINT)
@@ -89,6 +90,8 @@ extern "C" {
 		INSTANT_COMMAND_OUTPUT_DECLARATION(Left_align, LEFT)
 		INSTANT_COMMAND_OUTPUT_DECLARATION(Center_align, CENTER)
 		INSTANT_COMMAND_OUTPUT_DECLARATION(Right_align, RIGHT)
+		//设置打印结束后，并走纸到定位点
+		INSTANT_COMMAND_OUTPUT_DECLARATION(Locate, FORM)
 
 	};
 
