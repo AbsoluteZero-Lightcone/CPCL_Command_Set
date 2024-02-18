@@ -54,6 +54,7 @@ void Text::updateCmd() {
 	cmd.push_back('\n');
 }
 
+
 OVERLOAD_CONSTRUCTOR(AdvancedText)
 void AdvancedText::updateCmd() {}
 

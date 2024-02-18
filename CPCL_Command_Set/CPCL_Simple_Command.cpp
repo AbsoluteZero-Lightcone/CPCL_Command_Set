@@ -6,7 +6,8 @@
 	void CPCL_cmd::func_name()const {					\
 		output_interface_callback(#instruction);		\
 		output_interface_callback("\n");				\
-	}
+	}\
+
 
 #define SINGLE_PARAM_COMMAND_OUTPUT_DEFINITION(			\
 	func_name,											\
